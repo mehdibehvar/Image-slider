@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>mehdislider</title>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" href="./assets/css/style.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="icon-wrapper">
+                <span class="material-icons left-arrow" data-action="next">
+                    chevron_left
+                </span>
+                <span class="material-icons playicon" data-action="play">
+                    play_circle_outline
+                </span>
+                <span class="material-icons pauseicon" data-action="pause">
+                    pause_circle_outline
+                </span>
+            </div>
+            <div class="mehdi-slider">
+                <ul class="slides">
+                    <li class="slide"><img src="./assets/image/struggle.jpg" alt=""></li>
+                    <li class="slide"><img src="./assets/image/tr-n-toan-fzG9Jq44iNk-unsplash.jpg" alt=""></li>
+                    <li class="slide"><img src="./assets/image/mehrad.jpg" alt=""></li>
+                    <li class="slide"><img src="./assets/image/konstantinos-papadopoulos-bTZRESZHNGU-unsplash.jpg" alt=""></li>
+                    <li class="slide"><img src="./assets/image/mahdi-bafande-Hzrhx0_9c-0-unsplash.jpg" alt=""></li>
+                    <li class="slide"><img src="./assets/image/num10.jpg" alt=""></li>
+                    <li class="slide"><img src="./assets/image/px-fun-man-person-2361598-image11.jpg" alt=""></li>
+                    <li class="slide"><img src="./assets/image/sam-moqadam-9sfPj0QzOEU-unsplash.jpg" alt=""></li>
+                    <li class="slide"><img src="./assets/image/carousel-2.jpg" alt=""></li>
+                </ul>
+            </div>
+            <div class="icon-wrapper">
+                <span class="material-icons right-arrow" data-action="previous">
+                    chevron_right
+                </span>
+                <span class="material-icons fullscreen-icon" data-action="fullscreen">
+                    fullscreen_exit
+                </span>
+            </div>
+        </div>
+        <div class="adjust-circle">
+          
+        </div>
+        <div class="sub-slider">
+        
+        </div>
+        <template id="smallimage">
+            <li><img src="{{src}}" alt=""></li>
+            <span class="material-icons">{{adjust}}</span>
+        </template>
+        <script src="./assets/js/slider.js"></script>
+        <script>
+            'use strict';
+            let mehdislider = new Slider(document.querySelector(".container"));
+        </script>
+    </body>
+</html>
