@@ -1,4 +1,5 @@
 "use strict";
+// ----helloo my friend---
 class Slider {
   _fullscreenflag = 0;
   _currentsrcindex = 0;
